@@ -1,0 +1,123 @@
+% Journal Article
+% LaTeX Template
+% Version 2.0 (February 7, 2023)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+% NOTE: The bibliography needs to be compiled using the biber engine.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+
+\documentclass{article}
+
+\usepackage{booktabs} % Required for better horizontal rules in tables
+
+\usepackage{array} % Required for manipulating table columns
+\usepackage{caption} % Required for customizing captions
+\usepackage{enumitem} % Required for list customization
+\usepackage{hyperref} % Required for links
+\usepackage{graphicx} % Required for including images
+
+\newcommand{\important}[1]{\begin{center}\fbox{
+    \vspace{0.1cm}
+    \begin{minipage}{0.9\textwidth}
+    #1
+    \end{minipage}
+    \vspace{0.1cm}
+    }\end{center}
+    }
+
+
+
+\title{Journal} % Article title, use manual lines breaks (\\) to beautify the layout
+
+
+\author{Nathan Berrit}
+
+
+\begin{document}
+
+\maketitle % Output the title section
+
+
+
+\section{Reviews}
+
+\subsection*{Optical absorption and scattering spectroscopies of single nano-objects (2014)}
+Questions :
+
+
+\subsubsection*{I : Introduction}
+
+\subsubsection*{II : Single-particle detection and spectroscopy: absorption and scattering}
+
+à la fin, on dit qu'il y a des fabry perot effect : est-ce que les anneaux qu'on voit sont les anneaux d'un fabry pérot créé par le substrat ?
+
+\begin{itemize}
+    \item Read a paper on SNOM techniques, parce que j'ai rien compris.
+\end{itemize}
+
+
+\section{Articles}
+
+\subsection*{Direct Measurement of the Single-Metal-Cluster Optical Absorption (2004)}
+
+Auteurs : Del Fatti, Vallée, A. Arbouet.
+
+\underline{\textbf{Avantages de la SMS}} :
+\begin{itemize}
+    \item La ref 10 parle de la modulation de frequence, approche analogue de la SMS
+    \item Avantage de la SMS : permet de descendre en puissance incidente à des $\mu W$, alors que les techniques en interférence demandaient des mW.
+\end{itemize}
+
+\underline{\textbf{Optimisation du signal SMS}} :
+\begin{itemize}
+    \item Il faut un petit faisceau pour I'' grand.
+    \item optimisation de dy : val optimale pour dy = FWHM pour 2f et dy = 0.8 FWHM pour f. A tester numériquement.
+    \item dT/T must then be calculated numerically !
+\end{itemize}
+
+\underline{\textbf{System studied}} :
+\begin{itemize}
+    \item Gold nanosphere with diameters from 5 to 0 nm
+    \item substrate : glass 150 $\mu$m thick.
+\end{itemize}
+
+\underline{\textbf{Experimental setup}} :
+\begin{itemize}
+    \item 50x50$\mu$m piezo modulated as $\sim$1 kHz.
+    \item 2 lasers : ND:YVO4 at 532 nm or HeNe at 633 nm.
+    \item objective to focus at diff limit.
+\end{itemize}
+
+\underline{\textbf{Results}} : 
+\begin{itemize}
+    \item From maesurmements they deduced $\sigma_{ext}$ for a lot of nano-objects and compared it to expected theorical value with good agreement.
+    \item The dispersion on dT/T was in agreement with the dispersion on size measured with TEM.
+    \item The dT/T goes with theory when we add a surface term on permittivity.
+\end{itemize}
+
+
+\subsection*{Electron and Lattice Heating Contributions to the Transient Optical
+Response of a Single Plasmonic Nano-Object}
+
+Auteur : Romain Rouxelle.
+
+
+
+\subsection*{High-Pressure Effect on the Optical Extinction
+of a Single Gold Nanoparticle (2018)}
+\end{document}
